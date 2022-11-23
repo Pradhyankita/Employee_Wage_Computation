@@ -15,26 +15,50 @@ public class EmployeeWage {
         System.out.println("Welcome to Employee Wge Program");
         int dailyWage = 0;
         int empRandom = (int) Math.floor(Math.random() * 10) % 3;
-
-        System.out.println(empRandom);
-        if (empRandom == IS_FULL_TIME && FULL_DAY_HOUR == 16) {
-            System.out.println("Employee is present Full time");
-            EMPLOYEE_PRESENT = 20;
-            //int dailyWage = 0;
-            dailyWage = WAGE_PER_HOUR * FULL_DAY_HOUR;
-        } else if (empRandom == IS_PART_TIME && PART_TIME_HOUR == 8) {
-            System.out.println("Employee is present Part time");
-            EMPLOYEE_PRESENT = 20;
-            //int dailyWage = 0;
-            dailyWage = WAGE_PER_HOUR * PART_TIME_HOUR;
-        } else {
-            System.out.println("Employee is absent");
+        switch (empRandom) {
+            case IS_FULL_TIME:
+                System.out.println("Employee is present Full time");
+                EMPLOYEE_PRESENT = 20;
+                dailyWage = WAGE_PER_HOUR * FULL_DAY_HOUR;
+                break;
+            case IS_PART_TIME:
+                System.out.println("Employee is present Part time");
+                EMPLOYEE_PRESENT = 20;
+                dailyWage = WAGE_PER_HOUR * PART_TIME_HOUR;
+                break;
+            default:
+                System.out.println("Employee is absent");
         }
         System.out.println("Daily Wage is " + dailyWage);
-      //  System.out.println("UC3 done");
 
+        System.out.println("UC4 done");
     }
 }
+
+//    public static void main(String args[]) {
+//        System.out.println("Welcome to Employee Wge Program");
+//        int dailyWage = 0;
+//        int empRandom = (int) Math.floor(Math.random() * 10) % 3;
+//
+//        System.out.println(empRandom);
+//        if (empRandom == IS_FULL_TIME && FULL_DAY_HOUR == 16) {
+//            System.out.println("Employee is present Full time");
+//            EMPLOYEE_PRESENT = 20;
+//            //int dailyWage = 0;
+//            dailyWage = WAGE_PER_HOUR * FULL_DAY_HOUR;
+//        } else if (empRandom == IS_PART_TIME && PART_TIME_HOUR == 8) {
+//            System.out.println("Employee is present Part time");
+//            EMPLOYEE_PRESENT = 20;
+//            //int dailyWage = 0;
+//            dailyWage = WAGE_PER_HOUR * PART_TIME_HOUR;
+//        } else {
+//            System.out.println("Employee is absent");
+//        }
+//        System.out.println("Daily Wage is " + dailyWage);
+//      //  System.out.println("UC3 done");
+//
+//    }
+//}
 
 
 //        public static void main(String args[]) {
