@@ -1,8 +1,6 @@
 package com.bridgelabz.computation;
 
 public class EmployeeWage {
-    public class EmployeeWageComputation {
-
         static final int IS_FULL_TIME = 2;
         static final int IS_PART_TIME = 1;
         static final int WAGE_PER_HOUR = 20;
@@ -51,7 +49,6 @@ public class EmployeeWage {
             int random = (int) (Math.random() * 10) % 3;
             return random;
         }
-    }
 }
 //    public static void main(String args[]) {
 //        System.out.println("Welcome to Employee Wge Program");
