@@ -1,11 +1,22 @@
 package com.bridgelabz.computation;
 
 public class EmployeeWage {
+
     public enum Attendance{
         IS_FULL_TIME,IS_PART_TIME
     }
     static final int FULL_DAY_HOUR=10;
     static final int PART_TIME_HOUR=5;
+
+
+        public enum Attendance{
+            IS_FULL_TIME,IS_PART_TIME
+        }
+        static final int FULL_DAY_HOUR=10;
+        static final int PART_TIME_HOUR=5;
+        static final int MAX_HOURS=100;
+        static final int MAX_DAYS=20;
+        static int wagePerHour;
 
     public static void main(String[] args) {
         System.out.println("Welcome to Employee Wage Computation");
@@ -16,6 +27,21 @@ public class EmployeeWage {
                 +"Employee Wage Computation for company2");
         getEmployeeWage(25,23,160);
     }
+
+        static final int IS_FULL_TIME = 2;
+        static final int IS_PART_TIME = 1;
+        static final int WAGE_PER_HOUR = 20;
+        static final int FULL_DAY_HOUR = 10;
+        static final int PART_TIME_HOUR = 5;
+        static final int MAX_HOURS = 100;
+        static final int MAX_DAYS = 20;
+
+
+        public static void main(String[] args) {
+            System.out.println("Welcome to Employee Wage Computation");
+            EmployeeWage.getEmployeeWage();
+        }
+
 
     static void getEmployeeWage(int wagePerHour,int maxWorkingDays, int maxWorkingHours){
         Attendance attendance;
